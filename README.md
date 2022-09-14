@@ -35,6 +35,7 @@ En este ensayo estudiamos las derivadas, las funciones compuestas y la regla de 
 
 Recientemente, sistemas avanzados de inteligencia artificial han descubierto imágenes y rarezas importantísimas que nos relatan la historia de sus antepasados: desde las autómatas de Hefesto hasta El Motor que Gulliver encontró en Lagado. Para concluir nuestro curso, daremos un paseo por esta grandiosa colección de sorpresas arqueológicas.
 
+* [Cuaderno de notas en Colab](notebooks/museo.ipynb)
 ---
 
 ### Referencias
