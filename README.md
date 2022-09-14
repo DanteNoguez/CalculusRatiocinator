@@ -27,6 +27,8 @@ En este [ensayo](https://www.noguez.live/ia) descomponemos y analizamos conceptu
 
 En este ensayo estudiamos las derivadas, las funciones compuestas y la regla de la cadena para construir `pequegrad`, una versión en español de `micrograd` de [Andrej Karpathy](https://github.com/karpathy/micrograd).
 
+* [Cuaderno de notas en Colab](notebooks/ensayo_2.ipynb)
+
 ---
 
 **0.0. Musæum Clausum, o la Biblioteca Secreta: relación de imágenes y rarezas antiguas, nunca antes vistas por ningún humano viviente**
