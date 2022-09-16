@@ -1,4 +1,3 @@
-
 import math
 
 class Valor:
@@ -24,9 +23,6 @@ class Valor:
 
     return resultado
 
-  def __radd__(self, otro):
-    return self + otro
-
   def __mul__(self, otro): # self * otro
     otro = otro if isinstance(otro, Valor) else Valor(otro)
     resultado = Valor(self.valor * otro.valor, (self, otro), '*')
@@ -47,6 +43,9 @@ class Valor:
     resultado._backward = _backward
 
     return resultado
+
+  def __radd__(self, otro):
+    return self + otro
 
   def __rmul__(self, otro): # self * otro
     return self * otro
@@ -73,9 +72,30 @@ class Valor:
 
     def _backward():
       self.grad += (1 - t**2) * resultado.grad #según la fórmula 1-tanh**2x
-      
     resultado._backward = _backward
     
+    return resultado
+
+  def sigmoide(self):
+    x = self.valor
+    s = 1/(1 + math.exp(x))
+    resultado = Valor(s, (self, ), 'sigmoide')
+    
+    def _backward():
+      self.grad += (s * (1 - s)) * resultado.grad
+    resultado._backward = _backward
+
+    return resultado
+
+  def ReLU(self): # unidad lineal rectificada
+    x = self.valor
+    relu = 0 if x < 0 else x
+    resultado = Valor(relu, (self, ), 'ReLU')
+
+    def _backward():
+      self.grad += (x > 0) * resultado.grad
+    resultado._backward = _backward
+
     return resultado
 
   def exp(self):
@@ -84,6 +104,16 @@ class Valor:
 
     def _backward():
       self.grad += resultado.valor * resultado.grad
+    resultado._backward = _backward
+
+    return resultado
+
+  def log(self):
+    x = self.valor
+    resultado = Valor(math.log(x), (self, ), 'log')
+
+    def _backward():
+      self.grad += 1/x * resultado.grad
     resultado._backward = _backward
 
     return resultado
@@ -103,6 +133,3 @@ class Valor:
 
     for nodo in reversed(topo): # comenzamos desde adelante hacia atrás
       nodo._backward()
-
-  #def __repr__(self):
-    return f'(valor={self.valor}, gradiente={self.grad})'
