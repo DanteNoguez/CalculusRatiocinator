@@ -33,7 +33,7 @@ En este ensayo estudiamos las derivadas, las funciones compuestas y la regla de 
 
 **3. Transformers**
 
-Trabajo en progreso...
+Trabajo en progreso... Probablemente explique el [paper de DeepMind](https://arxiv.org/pdf/2207.09238.pdf).
 
 ---
 
