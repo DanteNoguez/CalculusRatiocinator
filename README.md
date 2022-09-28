@@ -9,11 +9,6 @@ En realidad, los modelos de inteligencia artificial o *deep learning* son expres
 ### Índice
 
 ---
-**0. Breve pincelada a propósito de la Inteligencia Artificial**
-
-Este [ensayo](https://www.noguez.live/pincelada) es una matización de mis ideas expresadas en un [artículo](https://www.academia.edu/43673994/La_Cuarta_Revolucio_n_Industrial_y_la_planeacio_n_poli_tica_en_Me_xico) anterior acerca de la Cuarta Revolución Industrial. Aunque innecesario para este curso, puede servir como material de contextualización para entender a grandes rasgos de qué hablamos cuando hablamos de inteligencia artificial.
-
----
 
 **1. Ensayo de una definición elemental de Inteligencia Artificial**
 
@@ -37,7 +32,7 @@ Trabajo en progreso... Probablemente explique el [paper de DeepMind](https://arx
 
 ---
 
-**0.0. Musæum Clausum, o la Biblioteca Secreta: relación de imágenes y rarezas antiguas, nunca antes vistas por ningún humano viviente**
+**5. Musæum Clausum, o la Biblioteca Secreta: relación de imágenes y rarezas antiguas, nunca antes vistas por ningún humano viviente**
 
 Recientemente, sistemas avanzados de inteligencia artificial han descubierto imágenes y rarezas importantísimas que nos relatan la historia de sus antepasados: desde las autómatas de Hefesto hasta El Motor que Gulliver encontró en Lagado. Para concluir nuestro curso, daremos un paseo por esta grandiosa colección de sorpresas arqueológicas.
 
